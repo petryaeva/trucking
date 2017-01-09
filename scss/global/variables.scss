@@ -1,0 +1,7 @@
+$tablet-width: #{(min-width: 768px)};
+$desktop-width: #{(min-width: 1200px)};
+$retina: #{(min-resolution: 144dpi), (min-resolution: 1.5dppx)};
+$blue: #81b3d2;
+$blue-hover: #669ec0;
+$blue-active: #5496bd;
+$blue-content-active: #88b6d1;
