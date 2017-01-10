@@ -9,10 +9,11 @@
 
 		<!-- <link rel="shortcut icon" href="favicon.png" /> -->
 		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-		<link rel="stylesheet" href="libs/jquery.fancybox.css" />
+		<!-- <link rel="stylesheet" href="libs/jquery.fancybox.css" /> -->
+		<link rel="stylesheet" href="libs/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <title>Infocon: главная</title>
+    <!-- <link rel="stylesheet" href="css/media.css" /> -->
+    <title>Грузоперевозки: главная</title>
 
 	</head>
 	<body>
@@ -22,10 +23,13 @@
     <![endif]-->
 		<div class="wrap-all">
 			<div class="wrap-top">
-				<header>
-					<div class="logo"></div>
+				<header class="header">
+					<a class="logo">
+						<img src="img/logo.png" alt="Грузоперевозки">
+					</a>
+
 					<div class="main-menu">
-						<div class="slogan">Городская служба перевозок <span>срочный вызов машины - 25 минут заказ любого транспорта</span></div>
+						<h1 class="slogan">Городская служба перевозок <span>срочный вызов машины - 25 минут заказ любого транспорта</span></h1>
 						<ul class="menu">
 							<li class="menu__item"><a href="#">О компании</a></li>
 							<li class="menu__item"><a href="#">Услуги</a></li>
@@ -36,24 +40,61 @@
 							<li class="menu__item"><a href="#">Контакты</a></li>
 						</ul>
 					</div>
+
 					<div class="header-phone">
 						круглосуточно
 						<div class="phone"><span>8 (863)</span> 201-71-71 <small>доб. 1</small></div>
 						<div class="phone">8 928 197-13-01</div>
-						<a href="mail">89281971301@mail.ru</a>
+						<a href="mailto:name@email.com" class="mail">89281971301@mail.ru</a>
 					</div>
 					<div class="header-btns">
-						<a href="#" class="btn--ask-question btn">Задать вопрос</a>
-						<a href="#" class="btn--order-transport btn">Заказать транспорт</a>
+						<a href="#" class="btn--ask-question btn-blue"><span>Задать вопрос</span></a>
+						<a href="#" class="btn--order-transport btn-green"><span>Заказать транспорт</span></a>
 					</div>
 				</header>
+				
+				<div class="banner">
+					<div class="services">
+						<button><span></span>Услуги</button>
+					</div>
+					<img src="img/banner.jpg" alt="Офисы и склады">
+					<a href="#" class="banner__lnk-camp btn-blue"><span>Дачный переезд</span></a>
+					<a href="#" class="banner__lnk-fura btn-blue"><span>Заказ фуры</span></a>
+					<a href="#" class="banner__lnk-ofice btn-blue"><span>Офисный переезд</span></a>
+					<a href="#" class="banner__lnk-spec btn-blue"><span>Спецтранспорт</span></a>
+					<a href="#" class="banner__lnk-home btn-blue"><span>Домашний переезд</span></a>
+					<a href="#" class="banner__lnk-market btn-blue"><span>Магазин / склад</span></a>
+				</div>
+
+				<div class="about-company">
+					<div class="about-company__text">
+						<h2>О компании</h2>
+						Первая производная, следовательно, упорядочивает возрастающий криволинейный интеграл, что неудивительно. Правда, некоторые специалисты отмечают, что целое число охватывает математический анализ. Легко проверить, что бесконечно малая величина положительна. Дивергенция векторного поля, как следует из вышесказанного, детерменирована. Матожидание, как следует из вышесказанного, концентрирует линейно зависимый расходящийся ряд. Нечетная функция накладывает математический анализ.
+						<a href="#" class="read-more">Узнать больше</a>
+					</div>
+
+					<div class="about-company__review">
+						<h3>Отзывы</h3>
+						<a href="#" class="btn-green"><span>Написать отзыв</span></a> 
+						<div class="review-list">
+							<div>
+								<div class="review">
+									Наибольшее и наименьшее значения функции усиливает интеграл от функции, обращающейся в бесконечность вдоль линии. Сумма ряда, исключая очевидный случай, специфицирует ротор векторного поля. Бином Ньютона отображает график функции многих переменных.
+								</div>
+								<span class="autor-name">Сергей Асланян</span>
+								<span class="data">15/12/2016</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
 		<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-		 <script src="libs/jquery.fancybox.pack.js"></script>
-		<!--<script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
-		<script src="js/script.js"></script>
+		 <!-- <script src="libs/jquery.fancybox.pack.js"></script> -->
+		<script src="libs/slick.min.js"></script> 
+		<!-- <script src="js/script.js"></script> -->
 		<script src="js/pixel.perfect.js"></script>
 	</body>
 </html>

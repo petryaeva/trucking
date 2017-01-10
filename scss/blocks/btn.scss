@@ -1,0 +1,46 @@
+.btn-blue {
+	background: $blue;
+	font-family:  $primary-font;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: block;
+	color: #fff;	
+	transform: skewX(-30deg);
+
+	span {
+		transform: skewX(30deg);
+	  text-align: center;
+		display: block;
+	}
+
+	&:hover {
+		background: $green;
+	}
+}
+.btn-green {
+	background: $green;
+	font-family: $secondary-font;
+	font-weight: 400;
+	text-transform: lowercase;
+	display: block;
+	color: #fff;	 
+	transform: skewX(-28deg);
+
+	span {
+		transform: skewX(28deg);
+	  text-align: center;
+		display: block;
+	}
+
+	&:hover {
+		background: $blue;
+	}
+}
+.btn--order-transport {
+	font-size: 31px;
+	line-height: 31px;
+}
+.btn--ask-question {
+	font-size: 11px;
+	line-height: 23px;
+}

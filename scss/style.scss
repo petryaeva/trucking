@@ -1,12 +1,13 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
-@import "global/normalize.css";
-@import "global/layout.scss";
+@import "global/normalize.scss";
 @import "global/scaffolding.scss";
 @import "global/fonts.scss";
-// @import "blocks/btn.scss";
-// @import "blocks/page-header.scss";
-// @import "blocks/page-footer.scss";
+@import "blocks/header.scss";
+@import "blocks/btn.scss";
+@import "blocks/services.scss";
+@import "blocks/banner.scss";
+@import "blocks/about-company.scss";
 // @import "blocks/header-menu.scss";
 // @import "blocks/main-navigation.scss";
 // @import "blocks/main-content.scss";
