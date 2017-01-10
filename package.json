@@ -1,10 +1,10 @@
 {
-  "name": "sedona",
+  "name": "trucking",
   "version": "0.1.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:petryaeva/trucking.git"
+    "url": "git+ssh://git@github.com/petryaeva/trucking.git"
   },
   "homepage": "https://github.com/petryaeva/trucking.git",
   "devDependencies": {
@@ -42,5 +42,12 @@
   },
   "dependencies": {
     "del": "^2.2.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/petryaeva/trucking/issues"
+  },
+  "description": "сайт грузоперевозок",
+  "main": "index.js",
+  "author": "Ekaterina Petryaeva",
+  "license": "ISC"
 }
