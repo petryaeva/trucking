@@ -9,14 +9,17 @@
 }
 * {
   box-sizing: border-box;
+  outline: none !important;
 }
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 body {
     @include font-control(14px, 28px, 400);
+    height: 100%;
 }
 hr {
     display: block;
@@ -84,6 +87,24 @@ fieldset {
 }
 .invisible {
     visibility: hidden;
+}
+.read-more {
+    color: #06b357;
+    @include font-control(11px, 15px, 400);
+    text-transform: lowercase;
+    display: block; 
+    height: 25px;
+    margin-top: 10px;
+    padding-left: 30px;
+    background: url("../img/read-more.png") no-repeat 0 0;
+}
+.wrap-all {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrap-top {
+  flex: 1 0 auto;
 }
 #pmOverlay {
     display: block;

@@ -6,6 +6,7 @@
 	display: block;
 	color: #fff;	
 	transform: skewX(-30deg);
+	transition: all .2s ease-in-out;
 
 	span {
 		transform: skewX(30deg);
@@ -15,6 +16,25 @@
 
 	&:hover {
 		background: $green;
+	}
+}
+.btn-white {
+	background: #fff;
+	font-family:  $primary-font;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: block;
+	color: #000;	
+	transform: skewX(-30deg);
+
+	span {
+		transform: skewX(30deg);
+	  text-align: center;
+		display: block;
+	}
+
+	&:hover {
+		background: $blue;
 	}
 }
 .btn-green {
@@ -34,6 +54,10 @@
 
 	&:hover {
 		background: $blue;
+	}
+
+	&--small {
+		font-family:  $primary-font; 
 	}
 }
 .btn--order-transport {

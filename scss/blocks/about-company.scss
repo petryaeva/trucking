@@ -1,6 +1,4 @@
 .about-company {
-	width: 1140px;
-	margin: 0 auto;
 	line-height: 22px;
 	display: flex;
 	-ms-flex-direction: row;
@@ -8,15 +6,18 @@
 	justify-content: flex-start;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap; 
+	margin-bottom: 25px;
 
 	&__text {
     width: 57.5%;
     margin-right: 30px;
+    color: #2d3a43;
 	}
 
 	&__review {
     width: 40%;
     margin-top: 8px;
+    color: #2d3a43;
     
 		
     h3 {
@@ -70,6 +71,27 @@
 	}
 }
 .review-list {
+
+	.slider__arrow {
+
+		position: absolute;
+		top: 34%;
+		background: transparent url("../img/slider-arrow.png") no-repeat 0 0;
+		border: 0;
+		width: 15px;
+    height: 25px;
+
+		&--prev {
+			left: 0;
+		}
+
+		&--next {
+			right: 0;
+			transform: rotate(180deg);
+		}
+
+	}
+
 	.autor-name {
     margin-left: 52px;
     font-weight: 800; 

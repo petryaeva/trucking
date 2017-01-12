@@ -15,7 +15,7 @@
 		z-index: -1;
 	} 
 
-	button {
+	.services-btn {
     margin-top: 85px;
     margin-left: 20px;
     background: transparent;
@@ -63,4 +63,58 @@
     }
 	}
 
+}
+.services-menu {
+	display: none;
+	position: absolute;
+  top: -13px;
+  left: -40px;
+  list-style-type: none;
+	transform: skewX(-29deg);	
+	-moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+	background: rgba(8, 83, 152, 0.8);
+	padding: 15px 40px;	
+  height: 900px;
+  width: 265px;
+
+	&__item {
+		color: #fff;
+		transform: skewX(29deg);
+
+		a {
+			color: #fff;
+			@include font-control(14px, 30px, 400);
+		}
+	}
+}
+.services.show .services-btn > span {
+  background: 0 0;
+  transition: background .3s 0;
+}
+.services.show .services-btn > span::after, 
+.services.show .services-btn > span::before {
+    top: 0;
+    transition: top .3s,transform .3s .5s;
+    transition: top .3s,transform .3s .5s, -webkit-transform .3s .5s;
+}
+.services.show .services-btn > span::before {
+    -webkit-transform: rotate3d(0,0,1,45deg);
+    transform: rotate3d(0,0,1,45deg);
+}
+.services.show .services-btn > span::after {
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+    transform: rotate3d(0,0,1,-45deg);
+}
+.services.show .services-menu {
+	display: block;
+  left: -40px;  
+}
+.services-btn:checked + .services-menu {
+	-moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
