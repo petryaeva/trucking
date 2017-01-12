@@ -35,7 +35,7 @@
 	    vertical-align: middle;
     	margin-right: 10px;
 	    background: $green;
-	    transition: background .3s .5s;
+	    transition: background .2s .4s;
 
 	    &:before {
 			  top: 10px;
@@ -53,8 +53,8 @@
 		    background: $green;
 		    -webkit-transform-origin: 50% 50%;
 		    transform-origin: 50% 50%;
-		    transition: top .3s .3s,transform .3s;
-		    transition: top .3s .3s,transform .3s,-webkit-transform .3s;
+		    transition: top .2s .2s,transform .2s;
+		    transition: top .2s .2s,transform .2s,-webkit-transform .2s;
 			}
 		}
 
@@ -68,7 +68,7 @@
 	display: none;
 	position: absolute;
   top: -13px;
-  left: -40px;
+  left: -300px;
   list-style-type: none;
 	transform: skewX(-29deg);	
 	-moz-transition: all 0.2s linear;
@@ -92,13 +92,13 @@
 }
 .services.show .services-btn > span {
   background: 0 0;
-  transition: background .3s 0;
+  transition: background .2s 0;
 }
 .services.show .services-btn > span::after, 
 .services.show .services-btn > span::before {
     top: 0;
-    transition: top .3s,transform .3s .5s;
-    transition: top .3s,transform .3s .5s, -webkit-transform .3s .5s;
+    transition: top .2s,transform .2s .4s;
+    transition: top .2s,transform .2s .4s, -webkit-transform .2s .4s;
 }
 .services.show .services-btn > span::before {
     -webkit-transform: rotate3d(0,0,1,45deg);
@@ -111,10 +111,4 @@
 .services.show .services-menu {
 	display: block;
   left: -40px;  
-}
-.services-btn:checked + .services-menu {
-	-moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }

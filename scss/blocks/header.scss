@@ -149,9 +149,33 @@
 
     span {
 			line-height: 30px;
+
+			// &:hover {		
+			// 	&:before {
+			// 		content: "";
+			// 		left: 0%;
+			// 		right: auto;
+			// 		width: 100%;
+			// 	}
+			// }		
+
+			// &:before {
+			// 	display: block;
+			// 	position: absolute;
+			// 	top: 0px;
+			// 	right: 0px; 
+			// 	height: 100%;
+			// 	width: 0px;
+			// 	z-index: -1;
+			// 	content: '';
+			// 	background: url("../img/btn-green-arrow-hover.png") no-repeat 0 0;
+			// 	transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+			// }
     }
 
-    &:before {
+    
+
+    &:after {
 			content: "";
 	    background: url("../img/btn-green-arrow.png") no-repeat 0 0;
 	    width: 198px;
