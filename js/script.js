@@ -63,6 +63,8 @@
 	//меню услуги
 	$(".services-btn").click(function () {
 		$(this).parent().toggleClass("show");
+		// $( ".block" ).animate({ "left": "-=150px" }, "slow" );
+		$(".services-menu").slideToggle();
 	});
 
 
