@@ -1,0 +1,67 @@
+.banner {
+	width: 100%;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	&__lnk-camp,
+	&__lnk-fura,
+	&__lnk-ofice,
+	&__lnk-spec,
+	&__lnk-home,
+	&__lnk-market {
+		position: absolute;
+		@include font-control(11px, 21px, 400);
+		padding: 3px 15px;
+		-webkit-box-shadow: 0px 0px 20px 8px rgba(255,255,255,0.7);
+		-moz-box-shadow: 0px 0px 20px 8px rgba(255,255,255,0.7);
+		box-shadow: 0px 0px 20px 8px rgba(255,255,255,0.7);
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+		transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); 
+
+		span {
+			position: relative;
+		}
+
+		span:after {
+			content: "";
+	    background: url("../img/btn-blue-arrow.png") no-repeat 0 0;
+	    position: absolute;
+	    right: -7px;
+	    bottom: -28px;
+	    width: 15px;
+	    height: 25px;
+	    transform: skewX(-5deg);
+		}		
+
+	}
+	&__lnk-camp {
+		top: 8%;
+    left: 59%;
+	}
+	&__lnk-fura {
+		top: 18%;
+    left: 78%;
+	}
+	&__lnk-ofice {
+		top: 24%;
+    left: 36.5%;
+	}
+	&__lnk-spec {
+		top: 43%;
+    left: 16.5%;
+	}
+	&__lnk-home {
+		top: 57%;
+    left: 30.5%;
+	}
+	&__lnk-market {
+		top: 54%;
+    left: 69%;
+	}
+}

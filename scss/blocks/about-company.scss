@@ -1,0 +1,104 @@
+.about-company {
+	line-height: 22px;
+	display: flex;
+	-ms-flex-direction: row;
+	    flex-direction: row;
+	justify-content: flex-start;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap; 
+	margin-bottom: 25px;
+
+	&__text {
+    width: 57.5%;
+    margin-right: 30px;
+    color: #2d3a43;
+	}
+
+	&__review {
+    width: 40%;
+    margin-top: 8px;
+    color: #2d3a43;
+    
+		
+    h3 {
+    	display: inline-block;
+	    vertical-align: middle;
+	    background: url("../img/icon-review.png") no-repeat 33px 0;
+	    padding-left: 65px;
+	    height: 28px;
+	    margin-right: 15px;
+	    margin-bottom: 15px;
+    }
+    .btn-green {
+    	display: inline-block;
+    	vertical-align: middle;
+			font-size: 23px;
+			padding: 9px 20px;
+    }
+	}
+}
+.review {
+	border: 3px solid #f0f0f0;
+	margin: 0 32px;
+	padding: 9px 12px;
+	font-style: italic;
+	position: relative;
+	margin-bottom: 12px;
+
+
+	&:before {
+		position: absolute;
+		content: "";
+		background: url("../img/arrow-review.jpg") no-repeat 0 0;
+		left: -3px;
+    bottom: -34px;
+    display: block;
+    width: 20px;
+    height: 35px;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		background: #ffffff; 
+		background: -moz-linear-gradient(-45deg,  #ffffff 0%, #ffffff 42%, #f0f0f0 50%, #ffffff 60%, #ffffff 60%, #ffffff 100%); 
+		background: -webkit-linear-gradient(-45deg,  #ffffff 0%,#ffffff 42%,#f0f0f0 50%,#ffffff 60%,#ffffff 60%,#ffffff 100%); 
+		background: linear-gradient(120deg,  #ffffff 0%,#ffffff 42%,#f0f0f0 50%,#ffffff 60%,#ffffff 60%,#ffffff 100%); 
+		right: -3px;
+    bottom: -3px; 
+    display: block;
+    width: 20px;
+    height: 35px;
+	}
+}
+.review-list {
+
+	.slider__arrow {
+
+		position: absolute;
+		top: 34%;
+		background: transparent url("../img/slider-arrow.png") no-repeat 0 0;
+		border: 0;
+		width: 15px;
+    height: 25px;
+
+		&--prev {
+			left: 0;
+		}
+
+		&--next {
+			right: 0;
+			transform: rotate(180deg);
+		}
+
+	}
+
+	.autor-name {
+    margin-left: 52px;
+    font-weight: 800; 
+	}
+
+	.data {
+    font-size: 11px;
+    line-height: 21px;
+	}
+}

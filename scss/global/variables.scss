@@ -1,7 +1,12 @@
 $tablet-width: #{(min-width: 768px)};
 $desktop-width: #{(min-width: 1200px)};
 $retina: #{(min-resolution: 144dpi), (min-resolution: 1.5dppx)};
-$blue: #81b3d2;
+$primary-font: "notosans", sans-serif;
+$secondary-font: "airportregular", sans-serif;
+$blue: #085398;
 $blue-hover: #669ec0;
 $blue-active: #5496bd;
 $blue-content-active: #88b6d1;
+$green: #19a755;
+$green-text: #06b357;
+$grey: #2d3a43;
