@@ -9,11 +9,17 @@
 }
 * {
   box-sizing: border-box;
+  outline: none !important;
 }
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
+}
+body {
+    @include font-control(14px, 28px, 400);
+    height: 100%;
 }
 hr {
     display: block;
@@ -34,6 +40,23 @@ h1 {
 	color: #000;
 	text-align: center;
 	text-transform: uppercase;
+}
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+    color: $grey;
+    font-family: $secondary-font;
+    text-transform: lowercase;
+    font-weight: 400;
+    margin: 15px 0;
+}
+h3 {
+    font-size: 23px;
+    line-height: 23px;
+    color: $grey;
+    font-family: $secondary-font;
+    text-transform: lowercase;
+    font-weight: 400;
 }
 fieldset {
     border: 0;
@@ -57,7 +80,7 @@ fieldset {
 .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
-    margin: 0;
+    margin: 0; 
     overflow: visible;
     position: static;
     width: auto;
@@ -65,12 +88,30 @@ fieldset {
 .invisible {
     visibility: hidden;
 }
+.read-more {
+    color: #06b357;
+    @include font-control(11px, 15px, 400);
+    text-transform: lowercase;
+    display: block; 
+    height: 25px;
+    margin-top: 10px;
+    padding-left: 30px;
+    background: url("../img/read-more.png") no-repeat 0 0;
+}
+.wrap-all {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrap-top {
+  flex: 1 0 auto;
+}
 #pmOverlay {
     display: block;
     position: absolute;
-    top: -61px !important;
-    width: 100%;
-    left: auto;
+    top: 94px !important;  
+    width: 100% !important;
+    left: auto !important;
     text-align: center !important;
-    opacity: 0.5;
+    opacity: 0.5; 
 }

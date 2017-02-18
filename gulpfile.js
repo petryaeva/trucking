@@ -66,7 +66,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("scss/**/*.{scss,sass}", ["style"]);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["copy-html"], server.reload);
 });
 
@@ -85,6 +85,7 @@ gulp.task("copy", function() {
       "fonts/**/*.{woff,woff2}",
       "img/**",
       "js/**",
+      "libs/**",
       "*.html"
     ], {
     base: "."

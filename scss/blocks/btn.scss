@@ -1,0 +1,118 @@
+.btn-blue {
+	background: $blue;
+	font-family:  $primary-font;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: block;
+	color: #fff;	
+	transform: skewX(-30deg);
+	transition: all .2s ease-in-out;
+	position: relative;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); 
+
+	span {
+		transform: skewX(30deg);
+	  text-align: center;
+		display: block;
+	}
+
+	&:hover {		
+
+		text-shadow: nthree;
+
+		&:before {
+			content: "";
+			left: 0%;
+			right: auto;
+			width: 100%;
+		}
+	}
+
+	&:before {
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px; 
+		height: 100%;
+		width: 0px;
+		z-index: -1;
+		content: '';
+		background: $green;
+		transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+	}
+}
+.btn-white {
+	background: #fff;
+	font-family:  $primary-font;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: block;
+	color: #000;	
+	transform: skewX(-30deg);
+
+	span {
+		transform: skewX(30deg);
+	  text-align: center;
+		display: block;
+	}
+
+	&:hover {
+		background: $blue;
+	}
+}
+.btn-green {
+	background: $green;
+	font-family: $secondary-font;
+	font-weight: 400;
+	text-transform: lowercase;
+	display: block;
+	color: #fff;	 
+	transform: skewX(-28deg);
+
+	span {
+		transform: skewX(28deg);
+	  text-align: center;
+		display: block;
+	}
+
+	&:hover {		
+
+		text-shadow: nthree;
+
+		&:before {
+			content: "";
+			left: 0%;
+			right: auto;
+			width: 100%;
+		}
+	}
+
+	&:before {
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px; 
+		height: 100%;
+		width: 0px;
+		z-index: -1;
+		content: '';
+		background: $blue;
+		transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+	}
+
+	&--small {
+		font-family:  $primary-font; 
+	}
+}
+.btn--order-transport {
+	font-size: 31px;
+	line-height: 31px;
+}
+.btn--ask-question {
+	font-size: 11px;
+	line-height: 23px;
+}

@@ -9,10 +9,9 @@
 
 		<!-- <link rel="shortcut icon" href="favicon.png" /> -->
 		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-		<link rel="stylesheet" href="libs/jquery.fancybox.css" />
+		<link rel="stylesheet" href="libs/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <title>Infocon: главная</title>
+    <title>Грузоперевозки: главная</title>
 
 	</head>
 	<body>
@@ -22,10 +21,13 @@
     <![endif]-->
 		<div class="wrap-all">
 			<div class="wrap-top">
-				<header>
-					<div class="logo"></div>
+				<header class="header">
+					<a class="logo">
+						<img src="img/logo.png" alt="Грузоперевозки">
+					</a>
+
 					<div class="main-menu">
-						<div class="slogan">Городская служба перевозок <span>срочный вызов машины - 25 минут заказ любого транспорта</span></div>
+						<h1 class="slogan">Городская служба перевозок <span>срочный вызов машины - 25 минут заказ любого транспорта</span></h1>
 						<ul class="menu">
 							<li class="menu__item"><a href="#">О компании</a></li>
 							<li class="menu__item"><a href="#">Услуги</a></li>
@@ -36,24 +38,263 @@
 							<li class="menu__item"><a href="#">Контакты</a></li>
 						</ul>
 					</div>
+
 					<div class="header-phone">
 						круглосуточно
 						<div class="phone"><span>8 (863)</span> 201-71-71 <small>доб. 1</small></div>
 						<div class="phone">8 928 197-13-01</div>
-						<a href="mail">89281971301@mail.ru</a>
+						<a href="mailto:name@email.com" class="mail">89281971301@mail.ru</a>
 					</div>
 					<div class="header-btns">
-						<a href="#" class="btn--ask-question btn">Задать вопрос</a>
-						<a href="#" class="btn--order-transport btn">Заказать транспорт</a>
+						<a href="#" class="btn--ask-question btn-blue"><span>Задать вопрос</span></a>
+						<a href="#" class="btn--order-transport btn-green"><span>Заказать транспорт</span></a>
 					</div>
 				</header>
+
+				<div class="banner">
+					<div class="services">
+						<button class="services-btn"><span></span>Услуги</button>
+						<ul class="services-menu">
+							<li class="services-menu__item"><a href="#">Грузоперевозки</a></li>
+							<li class="services-menu__item"><a href="#">Переезд дом</a></li>
+							<li class="services-menu__item"><a href="#">Переезд офис</a></li>
+							<li class="services-menu__item"><a href="#">Переезд дача</a></li>
+							<li class="services-menu__item"><a href="#">Переезд магазин/склад</a></li>
+							<li class="services-menu__item"><a href="#">Переезд стройматериалы</a></li>
+							<li class="services-menu__item"><a href="#">Прочие перевозки</a></li>
+							<li class="services-menu__item"><a href="#">Сборка/разборка мебели</a></li>
+							<li class="services-menu__item"><a href="#">Упаковка</a></li>
+							<li class="services-menu__item"><a href="#">Грузчики</a></li>
+						</ul>
+					</div>
+					<img src="img/banner.jpg" alt="Офисы и склады">
+					<a href="#" class="banner__lnk-camp btn-blue"><span>Дачный переезд</span></a>
+					<a href="#" class="banner__lnk-fura btn-blue"><span>Заказ фуры</span></a>
+					<a href="#" class="banner__lnk-ofice btn-blue"><span>Офисный переезд</span></a>
+					<a href="#" class="banner__lnk-spec btn-blue"><span>Спецтранспорт</span></a>
+					<a href="#" class="banner__lnk-home btn-blue"><span>Домашний переезд</span></a>
+					<a href="#" class="banner__lnk-market btn-blue"><span>Магазин / склад</span></a>
+				</div>
+
+				<div class="container about-company">
+					<div class="about-company__text">
+						<h2>О компании</h2>
+						Первая производная, следовательно, упорядочивает возрастающий криволинейный интеграл, что неудивительно. Правда, некоторые специалисты отмечают, что целое число охватывает математический анализ. Легко проверить, что бесконечно малая величина положительна. Дивергенция векторного поля, как следует из вышесказанного, детерменирована. Матожидание, как следует из вышесказанного, концентрирует линейно зависимый расходящийся ряд. Нечетная функция накладывает математический анализ.
+						<a href="#" class="read-more">Узнать больше</a>
+					</div>
+
+					<div class="about-company__review">
+						<h3>Отзывы</h3>
+						<a href="#" class="btn-green"><span>Написать отзыв</span></a>
+						<div class="review-list">
+							<div>
+								<div class="review">
+									Наибольшее и наименьшее значения функции усиливает интеграл от функции, обращающейся в бесконечность вдоль линии. Сумма ряда, исключая очевидный случай, специфицирует ротор векторного поля. Бином Ньютона отображает график функции многих переменных.
+								</div>
+								<span class="autor-name">Сергей Асланян</span>
+								<span class="data">15/12/2016</span>
+							</div>
+							<div>
+								<div class="review">
+									Наибольшее и наименьшее значения функции усиливает интеграл от функции, обращающейся в бесконечность вдоль линии. Сумма ряда, исключая очевидный случай, специфицирует ротор векторного поля. Бином Ньютона отображает график функции многих переменных.
+								</div>
+								<span class="autor-name">Сергей Асланян</span>
+								<span class="data">15/12/2016</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container special-offers">
+					<h2>Спецпредлжения</h2>
+					<a href="#" class="btn-green btn-green--small"><span>Смотреть все</span></a>
+					<div class="special-offers-slider">
+						<div>
+							<div class="special-offer">
+								<div class="special-offer__img">
+									<img src="img/special1.jpg" alt="" title="" width="262" height="190">
+									<div class="special-offer__data"><span>c 5 июня по 5 августа 2017 г</span></div>
+								</div>
+								<div class="special-offer__desc">
+									<a href="#" class="special-offer__caption" tabindex="0">Заголовок акции или спецпредложения</a>
+									Бином Ньютона допускает экспериментальный критерий интегрируемости.
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="special-offer">
+								<div class="special-offer__img">
+									<img src="img/special3.jpg" alt="" title="" width="262" height="190">
+									<div class="special-offer__data"><span>c 5 июня по 5 августа 2017 г</span></div>
+								</div>
+								<div class="special-offer__desc">
+									<a href="#" class="special-offer__caption" tabindex="0">Заголовок акции или спецпредложения</a>
+									Бином Ньютона допускает экспериментальный критерий интегрируемости.
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="special-offer">
+								<div class="special-offer__img">
+									<img src="img/special2.jpg" alt="" title="" width="262" height="190">
+									<div class="special-offer__data"><span>c 5 июня по 5 августа 2017 г</span></div>
+								</div>
+								<div class="special-offer__desc">
+									<a href="#" class="special-offer__caption" tabindex="0">Заголовок акции или спецпредложения</a>
+									Бином Ньютона допускает экспериментальный критерий интегрируемости.
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="special-offer">
+								<div class="special-offer__img">
+									<img src="img/special4.jpg" alt="" title="" width="262" height="190">
+									<div class="special-offer__data"><span>c 5 июня по 5 августа 2017 г</span></div>
+								</div>
+								<div class="special-offer__desc">
+									<a href="#" class="special-offer__caption" tabindex="0">Заголовок акции или спецпредложения</a>
+									Бином Ньютона допускает экспериментальный критерий интегрируемости.
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="special-offer">
+								<div class="special-offer__img">
+									<img src="img/special3.jpg" alt="" title="" width="262" height="190">
+									<div class="special-offer__data"><span>c 5 июня по 5 августа 2017 г</span></div>
+								</div>
+								<div class="special-offer__desc">
+									<a href="#" class="special-offer__caption" tabindex="0">Заголовок акции или спецпредложения</a>
+									Бином Ньютона допускает экспериментальный критерий интегрируемости.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="news-wrap">
+					<div class="container news-container">
+						<h2>Новости</h2>
+						<a href="#" class="btn-green btn-green--small"><span>Смотреть все</span></a>
+						<div class="news">
+							<div class="news__item">
+								<div class="news__photo">
+									<img src="img/news1.jpg" width="150" height="82" alt="" title="">
+								</div>
+								<div class="news__desc">
+									<a href="#" class="news__caption">Заголовок новости может быть в одну или несколько строк</a>
+									<div class="news__text">Микростроение мгновенно адсорбирует эксикатор при любом их взаимном расположении...</div>
+								</div>
+							</div>
+							<div class="news__item">
+								<div class="news__photo">
+									<img src="img/news2.jpg" width="150" height="82" alt="" title="">
+								</div>
+								<div class="news__desc">
+									<a href="#" class="news__caption">Заголовок новости может быть в одну или несколько строк</a>
+									<div class="news__text">Микростроение мгновенно адсорбирует эксикатор при любом их взаимном расположении...</div>
+								</div>
+							</div>
+							<div class="news__item">
+								<div class="news__photo">
+									<img src="img/news1.jpg" width="150" height="82" alt="" title="">
+								</div>
+								<div class="news__desc">
+									<a href="#" class="news__caption">Заголовок новости может быть в одну или несколько строк</a>
+									<div class="news__text">Микростроение мгновенно адсорбирует эксикатор при любом их взаимном расположении...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-lg-offset-3 col-md-offset-3">
+							<div class="footer-menu-list">
+								<div class="footer-menu">
+									<div class="footer-menu__caption">О компании</div>
+									<ul class="menu">
+										<li class="menu__item"><a href="#">Новости</a></li>
+										<li class="menu__item"><a href="#">Статья</a></li>
+										<li class="menu__item"><a href="#">Спецпредложения</a></li>
+										<li class="menu__item"><a href="#">Вакансии</a></li>
+										<li class="menu__item"><a href="#">Клиенты и партнеры</a></li>
+										<li class="menu__item"><a href="#">Отзывы</a></li>
+										<li class="menu__item"><a href="#">Документы</a></li>
+									</ul>
+								</div>
+								<div class="footer-menu">
+									<div class="footer-menu__caption">Услуги</div>
+									<ul class="menu">
+										<li class="menu__item"><a href="#">Грузоперевозки</a></li>
+										<li class="menu__item"><a href="#">Переезд дом</a></li>
+										<li class="menu__item"><a href="#">Переезд офис</a></li>
+										<li class="menu__item"><a href="#">Переезд дача</a></li>
+										<li class="menu__item"><a href="#">Переезд магазин/склад</a></li>
+										<li class="menu__item"><a href="#">Переезд стройматериалы</a></li>
+										<li class="menu__item"><a href="#">Прочие перевозки</a></li>
+										<li class="menu__item"><a href="#">Сборка/разборка мебели</a></li>
+										<li class="menu__item"><a href="#">Упаковка</a></li>
+										<li class="menu__item"><a href="#">Грузчики</a></li>
+									</ul>
+								</div>
+								<div class="footer-menu">
+									<div class="footer-menu__caption">Автопарк</div>
+									<ul class="menu">
+										<li class="menu__item"><a href="#">Газели с фургоном 1,5-2т</a></li>
+										<li class="menu__item"><a href="#">Газели с фургоном 3т</a></li>
+										<li class="menu__item"><a href="#">Газели с фургоном 5т</a></li>
+										<li class="menu__item"><a href="#">Газели с фургоном 10т</a></li>
+										<li class="menu__item"><a href="#"></a>ГСП</li>
+										<li class="menu__item"><a href="#"></a>Спецтранспорт</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="payment">
+								<div class="payment__caption">Способы оплаты</div>
+								<ul class="payment__list">
+									<li class="payment__item payment__item--nal"><a href="#">Наличный расчет</a></li>
+									<li class="payment__item payment__item--beznal"><a href="#">Безналичный расчет</a></li>
+									<li class="payment__item payment__item--sber"><a href="#">Сбербанк онлайн</a></li>
+									<li class="payment__item payment__item--viza"><a href="#">Оплата картами Viza, MasterCard</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-12 copyright">© 2016  «Городская служба перевозок»</div>
+					</div>
+				</div>
+				<div class="footer-map">
+					<div class="container map-container">
+						<div class="footer-phone">
+							<div class="phone"><span>8 (863)</span> 201-71-71 <small>доб. 1</small></div>
+							<div class="phone">8 928 197-13-01</div>
+							<a href="mailto:name@email.com" class="mail">89281971301@mail.ru</a>
+						</div>
+						<div class="address">
+							Ростов-на-Дону, <br>проспект 40-летия Победы, 85/4
+							<a href="https://yandex.ru/maps/-/CZX5YYKv" class="btn-white"><span>Показать на карте</span></a>
+						</div>
+						<div class="requisites">
+							<img src="img/requistes.jpg" alt="" width="34" height="49">
+							<a href="#" class="requisites__lnk">Реквизиты</a>
+						</div>
+						<a href="https://yandex.ru/maps/-/CZX5YBkd" class="route">Проложить маршрут</a>
+						<a href="www.webrost.ru" class="developers">
+							<img src="img/develop.png" alt="Разработка сайта - веброст" width="71" height="24">
+						</a>
+					</div>
+				</div>
+
+			</footer>
 		</div>
 
-		<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-		 <script src="libs/jquery.fancybox.pack.js"></script>
-		<!--<script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
+		<script src="libs/jquery-3.1.0.min.js"></script>
+		<script src="libs/slick.min.js"></script>
 		<script src="js/script.js"></script>
-		<script src="js/pixel.perfect.js"></script>
 	</body>
 </html>
